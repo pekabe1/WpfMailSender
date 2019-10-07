@@ -1,0 +1,29 @@
+﻿<Window x:Name="mainFrame" x:Class="WpfMailSender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMailSender"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500.272" Width="988.828">
+    <Grid Margin="0,0,0,-172" Height="641" VerticalAlignment="Top">
+        <TextBox x:Name="nFrom" HorizontalAlignment="Left" Height="26" Margin="160,88,0,0" TextWrapping="Wrap" Text="kurs.csharp12345@gmail.com" VerticalAlignment="Top" Width="201" TabIndex="2147483643"/>
+        <Label Content="From :" HorizontalAlignment="Left" Margin="73,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbTo" HorizontalAlignment="Left" Height="23" Margin="160,180,0,0" TextWrapping="Wrap" Text="kziarkowskiz@gmail.com" VerticalAlignment="Top" Width="163" TabIndex="2147483643"/>
+        <Label Content="TO :" HorizontalAlignment="Left" Margin="73,180,0,0" VerticalAlignment="Top" ClipToBounds="True"/>
+        <Label Content="text" HorizontalAlignment="Left" Margin="73,247,0,0" VerticalAlignment="Top" ClipToBounds="True"/>
+        <RichTextBox x:Name="rtbBody" HorizontalAlignment="Left" Height="170" Margin="146,259,0,0" VerticalAlignment="Top" Width="514">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Ala ma kota"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Add File&#xD;&#xA;" HorizontalAlignment="Left" Margin="690,273,0,0" VerticalAlignment="Top" Width="169"/>
+        <Button x:Name="SelectFile" Content="Select" HorizontalAlignment="Left" Margin="690,320,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="690,409,0,0" VerticalAlignment="Top" Width="238" RenderTransformOrigin="0.485,-2.44"/>
+        <TextBox x:Name="tb_Subject" HorizontalAlignment="Left" Height="23" Margin="449,180,0,0" TextWrapping="Wrap" Text="SMTP" VerticalAlignment="Top" Width="259" TabIndex="2147483643"/>
+        <Label x:Name="Subject" Content="Subject
+               " HorizontalAlignment="Left" Margin="362,180,0,0" VerticalAlignment="Top" ClipToBounds="True"/>
+    </Grid>
+</Window>
