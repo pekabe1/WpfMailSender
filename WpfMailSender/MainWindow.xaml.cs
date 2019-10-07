@@ -25,6 +25,7 @@ namespace WpfMailSender
     public partial class MainWindow : Window
     {
         byte[] file;
+        string FileName;
         public MainWindow()
         {
             InitializeComponent();
@@ -43,10 +44,11 @@ namespace WpfMailSender
                     Body = new TextRange(rtbBody.Document.ContentStart, rtbBody.Document.ContentEnd).Text,
 
                 };
-                model.Attachments.Add(new MailModer.Attachment {
+                model.Attachments.Add(new MailModer.Attachment
+                {
                     Name = SelectFile.Content.ToString(),
-                Content = file
-                }); 
+                    Content = file
+                });
                 MessageBox.Show(await service.Send(model));
 
             }
@@ -63,17 +65,18 @@ namespace WpfMailSender
             switch (result)
             {
                 case System.Windows.Forms.DialogResult.OK:
-                    
-                        var fileName = formDialog.FileName;
-                        SelectFile.Content = fileName;
-                        file = File.ReadAllBytes(fileName);
-                        break;
-                    
+
+                    var fullFileName = formDialog.FileName;
+                    FileName = fullFileName.Split('\\').LastOrDefault();
+                    SelectFile.Content = FileName;
+                    file = File.ReadAllBytes(fullFileName);
+                    break;
+
                 default:
                     SelectFile.Content = "...";
                     break;
             }
-            }
         }
     }
+}
 

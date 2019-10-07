@@ -25,7 +25,7 @@
             </FlowDocument>
         </RichTextBox>
         <Label Content="Add File&#xD;&#xA;" HorizontalAlignment="Left" Margin="565,523,0,0" VerticalAlignment="Top" Width="169"/>
-        <Button x:Name="SelectFile" Content="Select" HorizontalAlignment="Left" Margin="659,523,0,0" VerticalAlignment="Top" Width="75" Click="SelectFile_Click"/>
+        <Button x:Name="SelectFile" Content="Select" HorizontalAlignment="Left" Margin="565,565,0,0" VerticalAlignment="Top" Width="301" Click="SelectFile_Click"/>
         <Button x:Name="Send" Content="Send" HorizontalAlignment="Left" Margin="146,523,0,0" VerticalAlignment="Top" Width="238" RenderTransformOrigin="0.485,-2.44" Click="Send_Click"/>
         <TextBox x:Name="tb_Subject" HorizontalAlignment="Left" Height="23" Margin="449,180,0,0" TextWrapping="Wrap" Text="SMTP" VerticalAlignment="Top" Width="259" TabIndex="2147483643"/>
         <Label x:Name="Subject" Content="Subject
