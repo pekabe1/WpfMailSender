@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfMailSender"
         mc:Ignorable="d"
         Title="MainWindow" Height="500.272" Width="988.828">
-    <Grid Margin="0,0,0,-172" Height="641" VerticalAlignment="Top">
+    <Grid Margin="0,0,0,-137" VerticalAlignment="Top" Height="648">
         <TextBox x:Name="nFrom" HorizontalAlignment="Left" Height="26" Margin="160,88,0,0" TextWrapping="Wrap" Text="kurs.csharp12345@gmail.com" VerticalAlignment="Top" Width="201" TabIndex="2147483643"/>
         <Label Content="From :" HorizontalAlignment="Left" Margin="73,88,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbTo" HorizontalAlignment="Left" Height="23" Margin="160,180,0,0" TextWrapping="Wrap" Text="kziarkowskiz@gmail.com" VerticalAlignment="Top" Width="163" TabIndex="2147483643"/>
